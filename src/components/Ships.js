@@ -1,9 +1,12 @@
 
 import  React, {useEffect, useState } from 'react';
 import { Pop, Overlay, Boton3, BotonX, Nombre, Model, Model4, Model3} from "../styled";
+import Pilotos from '../Pilots/Pilotos';
+import Films from '../Films/Films';
 
 function Ships (props){
 
+const [naves, setNaves] = useState([]);
 const [info, setInfo] = useState(false);
 
 const abrir = () => {
@@ -12,7 +15,8 @@ const abrir = () => {
 const cerrar = () => {
     setInfo(false);
 }
-   
+
+
 
 return(
     <>
@@ -46,6 +50,11 @@ return(
         <div>MAXIMUM SPEED IN REALSPACE: {props.nave.max_atmosphering_speed} </div>
         </Model3>
         </Model4>
+
+       
+        <Pilotos pilots = {props.nave.pilots}></Pilotos> 
+       
+        <Films films={props.nave.films}> </Films>
 
         </Pop>
         
