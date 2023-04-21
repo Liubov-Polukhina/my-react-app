@@ -8,6 +8,8 @@ import Signup from './Signup';
 import './App.css';
 import imagen from "./pics/unnamed.jpg";
 
+
+
 const App = () => {
   const [usuario, setUsuario] = useState(() =>{
     try {
@@ -65,11 +67,11 @@ const App = () => {
       <Ships nave = {naves[2]}/>
       <Ships nave = {naves[3]}/>
       <Ships nave = {naves[4]}/> 
-      {/* <Ships nave = {naves[5]}/>
+      <Ships nave = {naves[5]}/>
       <Ships nave = {naves[6]}/>
-      <Ships nave = {naves[7]}/>
+      {/* <Ships nave = {naves[7]}/>
       <Ships nave = {naves[8]}/>
-      <Ships nave = {naves[9]}/>  */}
+      <Ships nave = {naves[9]}/>   */}
       </Container1>
       : "Cargando"}
       

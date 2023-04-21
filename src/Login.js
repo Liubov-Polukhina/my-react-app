@@ -20,7 +20,6 @@ const comprobar = (event) => {
 }
 
 useEffect(() => {
-    console.log(email)
     if (email== props.usuario.user && passw == props.usuario.pass){
         
         console.log("Log in correcto con usuario: "+ email + " y contraseña: " + passw);

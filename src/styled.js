@@ -46,7 +46,7 @@ align-items: center;
 export const Container1 = styled.div`
 display: flex;
 flex-direction: column;
-gap: 20px;
+gap: 5px;
 align-items: center;
 
 `;
