@@ -44,3 +44,10 @@ align-self: right;
 color: grey;
 border-color: none;
 `;
+
+export const Pop = styled.div`
+justify-content: center;
+position: relative;
+width: 100%
+
+`;
